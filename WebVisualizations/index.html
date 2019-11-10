@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <style>
+        .jumbotron{
+            background-color:rgb(237, 237, 245);
+            color:rgb(10, 10, 10);
+        }
+        /* Adds borders for tabs */
+        .tab-content {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+        }
+        .nav-tabs {
+            margin-bottom: 0;
+        }
+        .nav-bar {
+            @media only screen and (max-width: 420px) {background:#00ff00;}
+        }
+        .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
+        background-color: #FFFF00;
+         color: #FFC0CB;
+        }
+        p {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 15px;
+        color: rgb(29, 113, 165);
+        }
+
+        h2{
+            font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        color:#139e90;
+        font-weight: 900;
+        column-span: 4;
+        }
+        h3{
+            font-family: "Times New Roman", Times, serif;
+        font-size: 25px;
+        color:#139e90;
+        font-weight: 900;
+        }
+        floated{
+    float: left;
+    width: 150px;
+    background: red;
+}
+
+body{
+  background-color:rgb(222, 222, 228);
+}
+img {
+  float: left;
+}
+.box1
+{
+  border-color: #DBDEE0;
+  border-width: 1px;
+  border-style: solid;
+  margin: 40px 0px 30px 0px;
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  background-color: #FFFFFF;
+}
+.box2
+{
+  border-color: #DBDEE0;
+  border-width: 1px;
+  border-style: solid;
+  margin: 40px 0px 30px 0px;
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.box-title h3
+{
+  margin: 20px 10px 10px 0px;
+  margin-left: 5px;
+  }
+.box-title h2
+{
+  margin: 20px 10px 10px 0px;
+  margin-left: 5px;
+}
+
+.box-content
+{
+  color: #000000;
+  background-color: #FFFFFF;
+  padding: 10px;
+  float: left;
+}
+
+.box-icon a:visited
+{
+  border-left-color: #DBDEE0;
+  border-left-width: 1px;
+  border-left-style: solid;
+  color: #7C848D;
+  text-decoration: none;
+  display: inline-block;
+  width: 40px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  float:left;
+  background-color: transparent;
+}
+.box-icon a:hover,
+.box-icon a:focus
+{
+  background-color: #7C848D;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom-width: 0px;
+  color: #F4F5F5;
+}
+
+.colwidth{
+    -webkit-column-count: 3;
+    column-count: 3;
+}
+
+.col-sm-6 {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+}
+.row-m-t{
+  margin-top : 20px
+}
+        </style>
+</head>
+<body>
+    <div class="container container-fluid">   
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <span class="navbar-brand mb-0 h1" style="background-color:#21c2b2; color:linen">Latitude</span>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="nav navbar-nav navbar-right ml-auto" >
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Plots
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="viz_max_temp.html">Max Temperature</a>
+                                    <a class="dropdown-item" href="viz_humidity.html">Humidity</a>
+                                    <a class="dropdown-item" href="viz_cloudiness.html">Cloudiness</a>
+                                    <a class="dropdown-item" href="viz_wind_speed.html">Wind Speed</a>
+                                </div>
+                            </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="comparision.html">Comparision <span class="sr-only">(current)</span></a>
+                        </li>
+                        
+                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="myhtml.html">Data</a>
+                        </li>
+                        
+                        
+                      </ul>
+                    </div>
+            </nav>
+        
+<!-- <div class="jumbotron"> -->
+<div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 pull-left">
+          <div class="box1">
+          <!-- <div class="thumbnail"> -->
+            <div class="box-title pull-left">
+            <h3>Summary : Latitude vs. X</h3>
+            <hr>
+              </div>
+            <div class="box-content">
+            <img src="images/Fig1.png"  alt="..." width="50%">
+            <div class="caption"> 
+              
+              <p>The purpose of this project was to analyze how weather changes as you get closer to equator.To accomplish ths analysis,
+                    we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p><br>
+                <p>After Assembling the dataset ,we used Matplotlib to plot various aspects of the weather vs. latitude.Factors we looked at included
+                    : temperature,cloudiness,wind speed and humidity.This site provides the source data and visualization created as part of the        
+                analysis, as well as explanations and descriptions of any trends and correlations witnessed </p>
+            </div>  
+             </div> 
+            </div>
+        <!-- </div> -->
+      </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 pull-left">
+        <div class="box2"> 
+        <div class="box-title pull-left">
+        <h2>Visualizations</h2>
+                        <hr>
+                      </div>
+                        <div class="col-sm-12">
+                                <div class="row row-m-t box-icon">
+                                        
+                                        <div class="col-sm-6 other">
+                                                <!-- <div class="thumbnail"> -->
+                                                        <!-- <h2 class="colwidth">Visualizations</h2> -->
+                                                        
+                                                        <a href="viz_max_temp.html"><img src="images/Fig1.png" alt="Max Temperature" width="150px">
+                                                            </a>
+                                                <!-- </div> -->
+                                        </div>
+                                        <br>
+                                        <div class="col-sm-6 other2">
+                                                <!-- <div class="thumbnail"> -->
+                                                        <!-- <h2 class="colwidth">Visualizations</h2> -->
+                                                        <a href="viz_humidity.html"><img src="images/Fig2.png" alt="Humidity" width="150px"></a>
+                                                <!-- </div> -->
+                                        </div>
+                                      </div>
+                                    
+            
+                          <div class="row margin-top-20 row-m-t">
+                            <div class="col-sm-6 other ">
+                                    <div class="thumbnail">
+                                            <!-- <h2 class="colwidth">Visualizations</h2> -->
+                                            
+                                            <a href="viz_cloudiness.html"><img src="images/Fig3.png" alt="Cloudiness" width="150px"></a>
+                                    </div>
+                            </div>
+                            <br>
+                            <div class="col-sm-6 other2">
+                                    <!-- <div class="thumbnail"> -->
+                                            <!-- <h2 class="colwidth">Visualizations</h2> -->
+                                            
+                                            <a href="viz_wind_speed.html"><img src="images/Fig4.png" alt="Wind_Speed" width="150px">
+                                    <!-- </div> -->
+                            </div>
+                          </div>
+                        </div>
+        </div>   
+        </div>
+
+    <br>
+    <br>
+    <br>
+    
+    </div><br>     
+<!-- </div> -->
+</body>
+</html>
